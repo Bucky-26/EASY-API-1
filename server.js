@@ -9,7 +9,7 @@ const path = require("path");
 app.use(express.json());
 
 const funapi = "sf";
-const chatgptapi 'dsd';
+const chatgptapi='dsd';
 
 const port =4000;
 
