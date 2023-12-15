@@ -1,20 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const fs = require("fs").promises;
-const crypto = require("crypto");
 const axios = require("axios").default;
 const colors = require("colors");
 const logger = console.log;
 const cors = require("cors");
 const path = require("path");
-const requestIp = require("request-ip");
 
 app.use(express.json());
 app.use(cors());
-app.use(requestIp.mw({ attributeName: "clientIp" }));
 
-const funapi = process.env["isoyapikey"];
+const funapi = "sf"
 const chatgptapi = process.env.chatgptapikey;
 
 const port = process.env.PORT || 80;
@@ -83,9 +79,7 @@ apiModules.forEach((moduleName) => {
   }
 });
 
-const allRoutes = app._router.stack
-  .filter((middleware) => middleware.route)
-  .map((middleware) => middleware.route.path);
+
 
 const jsonString = JSON.stringify(allRoutes, null, 2);
 
@@ -114,5 +108,4 @@ function printTextArt(message) {
   });
 }
 
-const http = require("http");
 
