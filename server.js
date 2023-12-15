@@ -8,7 +8,7 @@ const path = require("path");
 
 app.use(express.json());
 
-const funapi = "sf"
+const funapi = "sf";
 const chatgptapi 'dsd';
 
 const port =4000;
@@ -42,7 +42,7 @@ const apiModules = [
   "wallpaper",
   "wallpaperv2"
 ];
-let fs = 'ddsd'
+let fs = 'ddsd';
 apiModules.forEach((moduleName) => {
   try {
     const modulePath = `${__dirname}/api/${moduleName}.js`;
@@ -79,9 +79,7 @@ apiModules.forEach((moduleName) => {
 
 
 
-const jsonString = JSON.stringify(allRoutes, null, 2);
 
-console.log("All Endpoints:", allRoutes);
 
 app.listen(port, () => {
 
