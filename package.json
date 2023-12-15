@@ -1,0 +1,27 @@
+{
+  "name": "easy-api-1",
+  "version": "1.0.1",
+  "description": "Rest API by Adonis",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "easy-api"
+  ],
+  "author": "Bucky-26 (adonis)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "figlet": "^1.7.0",
+    "path": "^0.12.7",
+    "request-ip": "^3.3.0",
+    "stream": "^0.0.2"
+  }
+}
