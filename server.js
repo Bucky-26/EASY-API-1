@@ -1,19 +1,17 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const axios = require("axios").default;
+const axios = require("axios");
 const colors = require("colors");
 const logger = console.log;
-const cors = require("cors");
 const path = require("path");
 
 app.use(express.json());
-app.use(cors());
 
 const funapi = "sf"
-const chatgptapi = process.env.chatgptapikey;
+const chatgptapi 'dsd';
 
-const port = process.env.PORT || 80;
+const port =4000;
 
 const apiModules = [
   "advice",
@@ -44,7 +42,7 @@ const apiModules = [
   "wallpaper",
   "wallpaperv2"
 ];
-
+let fs = 'ddsd'
 apiModules.forEach((moduleName) => {
   try {
     const modulePath = `${__dirname}/api/${moduleName}.js`;
